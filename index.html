@@ -16,11 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js" defer></script>-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,10 +71,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Convert image to PDF</h1>
+                        <h2>Convert image to PDF</h2>
 <!--                        <h3>A Template by Start Bootstrap</h3>-->
                         <hr class="intro-divider">
-                        <input type="file" id="files" name="files[]" multiple /><output id="list"></output>
+<!--                        <input type="file" id="files" name="files[]" multiple />-->
+                        <input id="files" type="file" accept="image/*" name="files[]" multiple/>
+                        <output id="list"></output>
 <!--
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -183,22 +186,22 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     
-    <script src="js/jspdf.js"</script>
+    <script src="js/bootstrap.js"></script>
     
+    
+    <!-- jsPDF -->
+    <script src="js/jspdf.js"</script>
     <script type="text/javascript" src="js/jspdf.plugin.standard_fonts_metrics.js"></script> 
     <script type="text/javascript" src="js/jspdf.plugin.split_text_to_size.js"></script>               
     <script type="text/javascript" src="js/jspdf.plugin.from_html.js"></script>
     <script type="text/javascript" src="js/jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="js/jquery.fileinput.js"></script>
     <script type="text/javascript" src="js/FileSaver.js"></script>
-    <script src="js/select.js"</script>
-    
-    
-    
     
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
     
     
+    <script src='js/select.js'></script>
 
 </body>
 
